@@ -1,0 +1,58 @@
+/* Seleciona todos os elementos e pseudo-elementos */
+*,
+*::before,
+*::after {
+    /* Zera todos os espaçamentos e bordas */
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    
+    /* Remove decorações e fundos padrões */
+    background: none;
+    list-style: none;
+    text-decoration: none;
+    box-shadow: none;
+    
+    /* Remove estilos nativos do sistema operacional (útil para inputs e botões) */
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    
+    /* Define dimensões como automáticas */
+    width: auto;
+    height: auto;
+    float: none;
+    
+    /* Previne que bordas e paddings afetem a largura total */
+    box-sizing: border-box; 
+}
+
+/* Reseta comportamentos de mídia para não quebrarem o layout */
+img, 
+picture, 
+video, 
+canvas, 
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Remove a linha padrão de links e tabelas */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Herda as fontes padrão em inputs e botões (já que o * não aplica a eles por padrão) */
+input, 
+button, 
+textarea, 
+select {
+    font: inherit;
+    color: inherit;
+    background: none;
+    border: none;
+    outline: none;
+}

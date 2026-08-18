@@ -26,6 +26,8 @@
     
     /* Previne que bordas e paddings afetem a largura total */
     box-sizing: border-box; 
+
+    font-family: Arial, sans-serif;
 }
 
 /* Reseta comportamentos de mídia para não quebrarem o layout */

@@ -69,11 +69,3 @@
   </symbol>
 
 </svg>
-
-<svg
-  viewBox="0 0 3000 3000"
-  width="100"
-  height="100"
->
-  <use href="https://assets.victormacedo.dev.br/svg/svgsheet.svg#arrow"></use>
-</svg>

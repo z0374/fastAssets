@@ -4,5 +4,5 @@
   viewBox="0 0 3000 3000"
   style="color: red;"
 >
-  <use href="https://assets.victormacedo.dev.br/svg/svgsheet.svg#arrow"></use>
+  <use href="svg/svgsheet.svg#arrow"></use>
 </svg>

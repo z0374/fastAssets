@@ -1,0 +1,118 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4960 1000" width="4960" height="1000" data-sheet="nestreaming-canais-svgsheet">
+  <defs>
+    <!-- Grade de referência opcional para visualização -->
+    <pattern id="sheet-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#DCE6EE" stroke-width="1" opacity="0.45" />
+    </pattern>
+
+    <!-- Gradientes do Canal 2 (channel_2) -->
+    <radialGradient id="ch2-bgCircleGrad" cx="35%" cy="25%" r="75%">
+      <stop offset="0%" stop-color="#F6F2FF" />
+      <stop offset="55%" stop-color="#DCD0F5" />
+      <stop offset="100%" stop-color="#B9A6E8" />
+    </radialGradient>
+
+    <linearGradient id="ch2-tvGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E56F5" />
+      <stop offset="28%" stop-color="#1982C4" />
+      <stop offset="54%" stop-color="#119E66" />
+      <stop offset="76%" stop-color="#E5A910" />
+      <stop offset="100%" stop-color="#FF3A00" />
+    </linearGradient>
+
+    <radialGradient id="ch2-centerCircleGrad" cx="62%" cy="32%" r="68%">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="55%" stop-color="#F4EEFF" />
+      <stop offset="100%" stop-color="#DFD2F7" />
+    </radialGradient>
+
+    <!-- Gradientes do Canal 4 (channel_4) -->
+    <linearGradient id="ch4-bodyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#222228" />
+      <stop offset="55%" stop-color="#0E0E12" />
+      <stop offset="100%" stop-color="#050507" />
+    </linearGradient>
+
+    <linearGradient id="ch4-rimGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.7" />
+      <stop offset="45%" stop-color="#B8BCC4" stop-opacity="0.35" />
+      <stop offset="100%" stop-color="#2A2A32" stop-opacity="0.1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo opcional (remova #sheet-bg e #sheet-grid-overlay para fundo transparente) -->
+  <rect id="sheet-bg" x="0" y="0" width="4960" height="1000" fill="#F8FAFC" />
+  <rect id="sheet-grid-overlay" x="0" y="0" width="4960" height="1000" fill="url(#sheet-grid)" />
+
+  <!-- Quadro 1 (x: 0..1240, y: 0..1000): Canal 1 (channel_1) -->
+  <g id="canal-01-icon" data-channel="channel_1" transform="translate(120, 0)">
+    <!-- Base / Tronco Inferior Azul -->
+    <path id="tronco-03" fill="#9BC3D8" 
+          d="M 358 552 
+             L 665 552 
+             L 665 785 
+             C 665 805, 658 818, 646 832 
+             L 538 968 
+             C 524 984, 502 984, 488 968 
+             L 376 832 
+             C 364 818, 358 805, 358 785 
+             Z" />
+
+    <!-- Cabeça / Tela Retangular -->
+    <g id="cabeca-03">
+      <!-- Borda Azul Claro -->
+      <rect x="85" y="18" width="854" height="538" rx="26" ry="26" fill="#BDD7E7" />
+      <!-- Tela Cinza Escuro -->
+      <rect x="99" y="31" width="826" height="511" rx="14" ry="14" fill="#686868" />
+    </g>
+  </g>
+
+  <!-- Quadro 2 (x: 1240..2480, y: 0..1000): Canal 2 (channel_2) -->
+  <g id="canal-02" data-channel="channel_2" transform="translate(1360, 0)">
+    <!-- Círculo Externo -->
+    <circle cx="500" cy="500" r="500" fill="url(#ch2-bgCircleGrad)" />
+
+    <!-- Moldura / Tela Arredondada em Degradê -->
+    <path d="M 118 242
+             C 340 210, 660 210, 882 242
+             C 914 247, 934 270, 936 304
+             C 944 434, 944 566, 936 696
+             C 934 730, 914 753, 882 758
+             C 660 790, 340 790, 118 758
+             C 86 753, 66 730, 64 696
+             C 56 566, 56 434, 64 304
+             C 66 270, 86 247, 118 242 Z"
+          fill="url(#ch2-tvGrad)" />
+
+    <!-- Círculo Central -->
+    <circle cx="500" cy="500" r="204" fill="url(#ch2-centerCircleGrad)" />
+  </g>
+
+  <!-- Quadro 3 (x: 2480..3720, y: 0..1000): Reservado para Channel_3 -->
+
+  <!-- Quadro 4 (x: 3720..4960, y: 0..1000): Canal 4 (channel_4) -->
+  <g id="canal-04" data-channel="channel_4" transform="translate(3840, 0)">
+    <!-- Esfera / Emblema Principal -->
+    <circle cx="500" cy="500" r="460" fill="url(#ch4-bodyGrad)" />
+
+    <!-- Faixa Diagonal Superior -->
+    <path d="M 155 155
+             C 375 185, 635 305, 865 445
+             L 815 515
+             C 590 380, 345 265, 115 235 Z"
+          fill="#FFFFFF" opacity="0.24" />
+
+    <!-- Faixa Diagonal Inferior -->
+    <path d="M 865 555
+             C 635 695, 375 815, 155 845
+             L 115 765
+             C 345 735, 590 620, 815 485 Z"
+          fill="#FFFFFF" opacity="0.24" />
+
+    <!-- Barra Vertical Esquerda -->
+    <rect x="255" y="215" width="76" height="570" rx="38" ry="38" fill="#FFFFFF" opacity="0.22" />
+
+    <!-- Contorno Brilhante Subtil -->
+    <circle cx="500" cy="500" r="456" fill="none" stroke="url(#ch4-rimGrad)" stroke-width="8" />
+  </g>
+</svg>

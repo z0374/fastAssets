@@ -225,5 +225,27 @@
       <rect x="99" y="31" width="826" height="511" rx="14" ry="14" fill="#686868" />
     </g>
   </g>
+  <!-- Quadro 9 (x: 9920..11160, y: 0..1000): Canal 9 (channel_9) -->
+  <g id="canal-09" data-channel="channel_9" transform="translate(10040, 0)">
+    <!-- Base / Tronco Inferior Azul -->
+    <path id="tronco-09" fill="#9BC3D8" 
+          d="M 358 552 
+             L 665 552 
+             L 665 785 
+             C 665 805, 658 818, 646 832 
+             L 538 968 
+             C 524 984, 502 984, 488 968 
+             L 376 832 
+             C 364 818, 358 805, 358 785 
+             Z" />
+
+    <!-- Cabeça / Tela Retangular -->
+    <g id="cabeca-09">
+      <!-- Borda Azul Claro -->
+      <rect x="85" y="18" width="854" height="538" rx="26" ry="26" fill="#BDD7E7" />
+      <!-- Tela Cinza Escuro -->
+      <rect x="99" y="31" width="826" height="511" rx="14" ry="14" fill="#686868" />
+    </g>
+  </g>
 
 </svg>

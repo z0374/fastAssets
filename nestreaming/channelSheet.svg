@@ -67,8 +67,6 @@
       <stop offset="75%" stop-color="#000000" stop-opacity="0.08" />
       <stop offset="100%" stop-color="#000000" stop-opacity="0.32" />
     </radialGradient>
-  </defs>
-
 
     <!-- Canal 1 (channel_1) -->
     <symbol id="channel_1" viewBox="0 0 1240 1000" data-channel="channel_1">

@@ -214,7 +214,7 @@
       <use href="#channel_1" />
     </symbol>
 
-    <!-- Canal 9 (channel_9 - SBT) - Perfeitamente redondo e protegido contra corte quadrado -->
+        <!-- Canal 9 (channel_9 - SBT) - Perfeitamente redondo e protegido contra corte quadrado -->
     <symbol id="channel_9" viewBox="0 0 1240 1000" data-channel="channel_9">
       <g transform="translate(120, 0)">
         <!-- Base externa perfeitamente circular (r=440 para não ser cortada pelo container quadrado do app) -->
@@ -301,7 +301,7 @@
       </g>
     </symbol>
 
-
+         
     <!-- Canal 10 (channel_10 - reutiliza channel_1) -->
     <symbol id="channel_10" viewBox="0 0 1240 1000" data-channel="channel_10">
       <use href="#channel_1" />

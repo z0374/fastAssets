@@ -214,37 +214,44 @@
       <use href="#channel_1" />
     </symbol>
 
-        <!-- Canal 9 (channel_9 - SBT) - Perfeitamente redondo e protegido contra corte quadrado -->
+    <!-- Canal 9 (channel_9 - SBT) - 100% redondo com fatias exatas (sem vazamento e sem clip-path) -->
     <symbol id="channel_9" viewBox="0 0 1240 1000" data-channel="channel_9">
       <g transform="translate(120, 0)">
-        <!-- Base externa perfeitamente circular (r=440 para não ser cortada pelo container quadrado do app) -->
-        <circle cx="500" cy="500" r="440" fill="#1859A9" />
+        <!-- 1. Círculo base perfeitamente redondo (r=460 evita corte quadrado do container do app) -->
+        <circle cx="500" cy="500" r="460" fill="#0088CE" />
 
-        <!-- Anéis e manchas internas 100% contidos dentro do raio 440 (cx ± r <= 940 e >= 60) -->
-        <!-- Verde (superior esquerdo: 375 - 295 = 80 >= 60) -->
-        <circle cx="375" cy="375" r="295" fill="#43B02A" fill-opacity="0.72" />
-        <!-- Amarelo / Laranja (superior direito: 625 + 295 = 920 <= 940) -->
-        <circle cx="625" cy="370" r="295" fill="#FDB913" fill-opacity="0.78" />
-        <!-- Vermelho / Magenta (inferior direito: 620 + 295 = 915 <= 940) -->
-        <circle cx="620" cy="630" r="295" fill="#E31C3D" fill-opacity="0.75" />
-        <!-- Roxo / Azul escuro (inferior esquerdo: 380 - 295 = 85 >= 60) -->
-        <circle cx="380" cy="630" r="295" fill="#5C2D91" fill-opacity="0.72" />
+        <!-- 2. Setores/fatias com arco exato de r=460 (nunca passam da borda!) -->
+        <!-- Setor Verde (esquerda / topo-esquerda) -->
+        <path d="M 500 500 L 102 270 A 460 460 0 0 1 500 40 Z" fill="#43B02A" fill-opacity="0.88" />
+        <path d="M 500 500 L 40 500 A 460 460 0 0 1 102 270 Z" fill="#00A651" fill-opacity="0.85" />
 
-        <!-- Núcleo central para dar volume de esfera -->
-        <circle cx="500" cy="500" r="360" fill="#152238" fill-opacity="0.22" />
+        <!-- Setor Amarelo e Laranja (topo-direita) -->
+        <path d="M 500 500 L 500 40 A 460 460 0 0 1 898 270 Z" fill="#FDB913" fill-opacity="0.92" />
+        <path d="M 500 500 L 898 270 A 460 460 0 0 1 960 500 Z" fill="#F58220" fill-opacity="0.90" />
 
-        <!-- Tipografia "sbt" redimensionada proporcionalmente para o círculo r=440 -->
-        <g transform="translate(500, 500) scale(0.88) translate(-500, -500)">
-          <!-- Sombra sutil da tipografia -->
+        <!-- Setor Vermelho e Magenta (base-direita) -->
+        <path d="M 500 500 L 960 500 A 460 460 0 0 1 730 898 Z" fill="#E31C3D" fill-opacity="0.90" />
+        <path d="M 500 500 L 730 898 A 460 460 0 0 1 500 960 Z" fill="#EC008C" fill-opacity="0.88" />
+
+        <!-- Setor Roxo e Azul Profundo (base-esquerda) -->
+        <path d="M 500 500 L 500 960 A 460 460 0 0 1 102 730 Z" fill="#662D91" fill-opacity="0.88" />
+        <path d="M 500 500 L 102 730 A 460 460 0 0 1 40 500 Z" fill="#1B6EC2" fill-opacity="0.85" />
+
+        <!-- 3. Suavização central esférica (círculos concêntricos exatos no centro 500,500) -->
+        <circle cx="500" cy="500" r="390" fill="#1C2536" fill-opacity="0.16" />
+        <circle cx="500" cy="500" r="290" fill="#FFFFFF" fill-opacity="0.12" />
+
+        <!-- 4. Tipografia "sbt" centralizada -->
+        <g transform="translate(500, 500) scale(0.90) translate(-500, -500)">
+          <!-- Sombra sutil -->
           <g transform="translate(5, 7)" fill="#000000" fill-opacity="0.28">
             <path d="M 326 392 C 326 346, 286 322, 224 322 C 154 322, 108 358, 108 412 C 108 462, 142 486, 206 502 C 254 514, 270 526, 270 548 C 270 572, 248 586, 214 586 C 178 586, 156 570, 152 544 L 96 544 C 100 604, 146 636, 216 636 C 288 636, 334 598, 334 540 C 334 486, 298 462, 232 446 C 186 435, 170 424, 170 404 C 170 382, 190 368, 222 368 C 254 368, 270 382, 274 404 L 326 392 Z" />
             <path d="M 366 196 L 428 196 L 428 362 C 448 336, 480 322, 518 322 C 596 322, 650 384, 650 478 C 650 574, 596 636, 518 636 C 478 636, 446 620, 426 592 L 426 628 L 366 628 Z M 508 582 C 558 582, 586 542, 586 478 C 586 416, 558 376, 508 376 C 458 376, 428 416, 428 478 C 428 542, 458 582, 508 582 Z" />
             <path d="M 730 232 L 792 232 L 792 330 L 864 330 L 864 382 L 792 382 L 792 536 C 792 568, 806 582, 838 582 C 848 582, 858 580, 866 578 L 866 630 C 852 634, 834 636, 816 636 C 754 636, 730 606, 730 544 L 730 382 L 682 382 L 682 330 L 730 330 Z" />
           </g>
 
-          <!-- Tipografia "sbt" em branco -->
+          <!-- Letras "sbt" em branco -->
           <g id="ch9-texto-sbt" fill="#FFFFFF">
-            <!-- Letra "s" -->
             <path d="M 326 392
                      C 326 346, 286 322, 224 322
                      C 154 322, 108 358, 108 412
@@ -261,7 +268,6 @@
                      C 254 368, 270 382, 274 404
                      L 326 392 Z" />
 
-            <!-- Letra "b" -->
             <path d="M 366 196
                      L 428 196
                      L 428 362
@@ -278,7 +284,6 @@
                      C 458 376, 428 416, 428 478
                      C 428 542, 458 582, 508 582 Z" />
 
-            <!-- Letra "t" -->
             <path d="M 730 232
                      L 792 232
                      L 792 330
@@ -301,7 +306,8 @@
       </g>
     </symbol>
 
-         
+
+
     <!-- Canal 10 (channel_10 - reutiliza channel_1) -->
     <symbol id="channel_10" viewBox="0 0 1240 1000" data-channel="channel_10">
       <use href="#channel_1" />
